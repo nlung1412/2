@@ -49,6 +49,7 @@ body{
 .btn--white{
     background-color: var(--btn-primary-bg);
     color: var(--btn-txt-primary);
+
 } 
 .btn--white:hover{
     background-color: var(--btn-bg-hover);
@@ -71,8 +72,8 @@ body{
 /* heart icon btn */
 .btn--smallest{  
     border-radius: var(--border-radius-gentle);
-    padding: 0.25em;
-    border:none;    
+    padding: 5px;
+    
 } 
 
 .btn--small{
@@ -104,7 +105,10 @@ body{
     width: 100%;
 } 
 
-
+.price{
+    font-size: var(--fs-s);
+    font-weight: var(--demibold);
+}
 
 /* ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML*/
 
@@ -603,6 +607,82 @@ footer{
 }
 
 /* ------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END */
+
+.product_page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product_list_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.prodlist_card{
+    max-width: 312px;
+    max-height: 434px;
+    padding: 10px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img img"
+    "img img" "img img" "img img" "img img" "name price" "desc desc" "btn btn";
+    justify-items: start;
+    align-items: end;
+}
+
+.card_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.prod_list_img{
+    grid-area: img;
+}
+
+.prod_title{
+    font-size: var(--fs-xs);
+    grid-area: name;
+    font-weight: var(--demibold);
+    color: var(--color-text-primary);
+    line-height: var(--linespace-main);
+
+}
+
+.heart_filled{
+    border: 1px solid var(--color-primary);
+    padding: 2px 5px; 
+}
+.prod_list_seemore{
+    border-radius: var(--border-radius-gentle) ;
+
+}
+
+
+.prodlist_desc{
+    grid-area: desc;
+    font-size: var(--fs-xxs);
+    align-self: start;
+    margin-top: var(--spacing-title-desc);
+}
+.prodlist_price{
+    grid-area: price;
+    justify-self: end;
+}
+
+.card_btn{
+    grid-area: btn;
+    margin-bottom: 5px;
+    justify-self: end;
+}
+
+
+
+
+
 
 
 
