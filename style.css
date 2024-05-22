@@ -116,6 +116,28 @@ body{
     color: var(--color-primary)
 }
 
+/* universal font size + weight */
+.desc{      /*universal description styling*/
+    font-size: var(--fs-xxs);
+    color: var(--color-text-desc);
+    font-weight: var(--light);  
+}
+
+.txt--regular-s{
+    font-size: var(--fs-s);
+    font-weight: var(--regular);
+}
+
+.txt--regular-xxs{
+    font-size: var(--fs-xxs);
+    font-weight: var(--light);  
+}
+
+.txt--demibold-xs{
+    font-size: var(--fs-xs);
+    font-weight: var(--demibold);
+}
+
 /* ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML*/
 
 /* -----------------------NAVIGATION------------------- */
@@ -370,8 +392,7 @@ hr{
 }
 
 .feat_desc{
-    font-size: var(--fs-s);
-    font-weight: var(--regular);
+
     text-align: center;
 }
 
@@ -438,21 +459,16 @@ hr{
 }
 
 .card_title{    /*product name*/
-    font-size: var(--fs-xs);
-    font-weight: var(--demibold);
     padding-bottom: 0.25em;
     max-width: 264px;
+    line-height: var(--linespace-main);
+    color: var(--color-text-primary);
+
 }
 
-.card_desc{     /*product description*/
-    max-width: 254px;
-}
 
-.desc{      /*universal description styling*/
-    font-size: var(--fs-xxs);
-    color: var(--color-text-desc);
-    font-weight: var(--light);  
-}
+
+
 
 
 /*------------ our mission section -----------*/
@@ -553,8 +569,6 @@ hr{
 }
 
 .sect_desc{
-    font-size: var(--fs-s);
-    font-weight: var(--regular);
     margin-left: 15%;
     margin-top: 20px;
 }
@@ -654,12 +668,7 @@ footer{
 }
 
 .prod_title{
-    font-size: var(--fs-xs);
     grid-area: name;
-    padding-top: 10px;
-    font-weight: var(--demibold);
-    color: var(--color-text-primary);
-    line-height: var(--linespace-main);
 
 }
 
@@ -673,7 +682,6 @@ footer{
 
 .prodlist_desc{
     grid-area: desc;
-    font-size: var(--fs-xxs);
     align-self: start;
     margin-top: var(--spacing-title-desc);
 }
@@ -715,9 +723,6 @@ footer{
 
 .page_num{
     align-self: center;
-    font-size: var(--fs-xs);
-    font-weight: var(--demibold);
-
 }
 
 
