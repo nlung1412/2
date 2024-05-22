@@ -1,0 +1,36 @@
+@import url("https://use.typekit.net/ikh7fdp.css");
+
+:root{
+    --font-family: "articulate-cf", sans-serif;
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+
+
+    /*font-sizing*/
+
+    --fs-xl: 60px;  /* main title*/
+    --fs-l: 30px;   /* section heading, footer heading, shopnow*/
+    --fs-m: 25px;   /* subtitle , feature list, recently view, product page title, footer heading*/
+    --fs-s: 20px;   /*Section sub, nav, mission state, feature desc, order summart*/
+    --fs-xs: 15px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+    --fs-xxs: 13px; /*seemore bnt, language*/
+    --fs-xxxs: 10px;    /*prod desc (expt prod page),  cat on prod cards*/
+
+
+
+    /* font weight*/
+
+    --xbold: 900;
+    --demibold: 700;
+    --regular: 500;
+    --light: 300;
+
+    --border-radius-gentle: 5px;
+    --btn-radius-medium: 8px;
+    --btn-radius-high: 10px;
+    --btn-radius-highest: 50px;
+    
+
+
+
+}
