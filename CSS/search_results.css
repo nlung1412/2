@@ -1,24 +1,25 @@
 #results_page{
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    margin: var(--center-align);   
+    gap: 30px;
+    margin: 36px var(--padding-center);   
+    
 }
 
 .product_list_container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 35px;
     margin-top: 10px; 
 
     
 }
 
 .prodlist_card{
-    max-width: 350px;
+    max-width: 290px;
     max-height: 434px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -35,7 +36,7 @@
 }
 .prod_list_img{
     grid-area: img;  
-    width: 350px;
+    width: 290px;
 }
 
 .prod_title{
@@ -71,6 +72,7 @@
     display: flex;
 }
 
+
 .filter_list{
     margin: 30px 0px;
 }
@@ -88,8 +90,9 @@
 }
 
 .filter_btn{
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
 }
 
 .page_num{
