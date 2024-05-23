@@ -1,0 +1,315 @@
+/* importing css files */
+@import url(/CSS/colours.css);       /*colour styles*/
+
+@import url(/CSS/typograpy.css);     /*font styles*/
+
+@import url(https://info20005.github.io/Layout-Composition/reset.css);
+
+@import url(/CSS/presets.css);
+
+@import url(/CSS/Birthday.css);
+
+@import url(/CSS/home.css);
+
+
+
+/* ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML*/
+
+/* -----------------------NAVIGATION------------------- */
+
+.navbar{
+    background-color: var( --color-tertiary);  
+    padding-bottom: 10px;  
+
+}
+
+.menu_icon{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top:5rem;
+    left: 2.5rem;
+}
+
+#check{
+    display: none;
+}
+
+/* navigation top half */
+.top_nav{       
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-left:  var(--padding-center);
+    padding-right: var(--padding-center);  
+    padding-top: 20px;
+  
+}
+
+/* line */
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--color-text-desc);
+    margin-bottom: 1em;
+    margin-left: var(--padding-center);
+    margin-right: var(--padding-center);   
+}
+
+
+
+/* <logo -> language> */
+.top_nav > *{
+    margin:0.5rem;
+
+}
+
+.logo{
+    width: 2.5rem;
+}
+
+
+/* <logo -> categories> */
+.nav_navigation{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+
+/* spacing between nav categories */
+.nav_navigation > *+*{
+    padding: 0.5em 1.5rem;
+}
+
+
+/* navigation names: shop all, trending... */
+.navbtn{
+    font-size: var(--fs-s);
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.nav_language{
+    font-size: var(--fs-xxs);
+    color: var(--color-text-desc);
+}
+
+
+/* nav bottom half */
+.bot_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em var(--padding-center);
+    margin: 0.5em;
+    margin-top:0;
+    flex-wrap: wrap;
+}
+
+.search_items{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    /* border: 2px solid green; */
+}
+
+.search_items > input{
+    width:70%;
+    height: 2.5em;
+    border-radius: 10px;
+    border-color: var(--color-text-desc);
+}
+
+.search_icon{
+    padding:0.5em;
+}
+
+.nav_user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 3.5rem; 
+}
+
+.nav_user > a > img{    
+    width: 1.5rem;  
+} 
+
+/* navbar breakpoints */
+@media screen and (max-width : 992px){
+
+    a.navbtn{
+        font-size: var(--fs-xs);
+        padding:2vw;
+    }
+
+    .top_nav > .nav_language{
+        font-size: var(--fs-xxxs);
+    }
+
+    .nav_user > a > img{
+      
+        height: 1.5rem;
+        
+    } 
+
+}
+
+
+
+
+
+/* ------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START*/
+
+footer{
+    background-color: var(--color-secondary) ;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0;
+    gap: 50px;   
+}
+
+.foot_container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.foot_cat> *+*{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.foot_sub{
+    font-size: var(--fs-s);
+    font-weight: var(--demibold);
+}
+
+#foot_title{
+    font-size: var(--fs-l);
+    font-weight:var(--xbold);
+}
+
+
+.foot_icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.foot_nav{
+    font-size: var(--fs-xs);
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+/* ------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR INDEX.HTML:
+- make title, subtitle smaller USE RESPONSIVE TYPOGRAPHY (12.5 lecture)
+- responsive nav bar 
+- hide lines in feature
+- fix section banenrs
+- resize boxes for mission statements
+- footer resize
+*/
+
+
+@media screen and (max-width: 1264px ){
+    .vertical{
+        display: none;
+    }
+}
+
+
+
+
+/* nav bar responsive */
+/* 
+@media screen and (max-width : 670px){
+
+    .menu_icon{
+        display: inline-flex;
+    }
+
+    #check:checked~.menu_icons #hamburger{
+        display: none;
+    }
+    #check:checked~.menu_icons #close{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top:10;
+        left:0;
+        width: 100%;
+        height: calc(100vh - 158px);
+        background-color: rgba(0,0,0,0.1);
+        backdrop-filter: blur(40px)
+    }
+
+
+
+    .nav_navigation{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        padding:9;
+        align-items: flex-start;
+        margin-top: 7rem;
+    }
+
+    .nav_navigation > .navbtn{
+        margin-top:0;
+        margin-bottom: 3rem;
+        padding:0;
+        font-size: var(--fs-m);
+        font-weight: var(--regular);
+    }
+
+    .menu_icon #close{
+        display: none;
+    } 
+
+
+
+    .bot_nav, .line, .nav_language, .logo{
+        display: none;
+    }
+
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+

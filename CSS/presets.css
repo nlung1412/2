@@ -1,0 +1,155 @@
+/* --------- resets and general style settings -------*/
+:root{
+    font-size: var(--fs-s);
+    font-family: var(--font-family);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height:100vh;
+    min-width: 100vw;
+}
+
+.html{
+    width: 100vw;
+    height:100vh;
+}
+
+
+/* ------  BEM universal button CSS --------*/
+.btn{
+    text-decoration: none;
+    border: 2px solid var(--btn-txt-primary);
+
+} 
+
+/* shop now */
+.btn--mainbtn{ 
+    font-size: var(--fs-l);
+    font-weight: var(--bold);
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-txt-hover);
+    border-radius: var(--btn-radius-highest);
+    padding:0.5em 2.5em;
+} 
+
+/* white background btns */
+.btn--white{
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-txt-primary);
+
+} 
+.btn--white:hover{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-txt-hover);
+} 
+
+/* blue background btns */
+.btn--blue{
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-txt-hover);
+} 
+
+.btn--blue:hover{
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-txt-primary);
+} 
+
+.btn--lightblue{
+    background-color: var(--color-secondary);
+    color: var(--color-text-tertiary);
+}
+
+/*--- btn sizes ---*/
+
+/* heart icon btn */
+.btn--smallest{  
+    border-radius: var(--border-radius-gentle);
+    padding: 5px;
+    
+} 
+
+.btn--small{
+    font-size: var(--fs-xxs) ;
+    border-radius: var(--btn-radius-high);
+    padding:0.5em 2em;
+    border-width: 1px; 
+} 
+
+/* medium button styling: category names in cat section (index)*/
+.btn--med{
+    padding-top: 0.5em; 
+    padding-bottom: 0.5em; 
+    width: 200px;
+    border-radius: var(--btn-radius-medium);
+    font-size:var(--fs-s) ;
+    font-weight: var(--regular);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* btns on cards: look inside */
+.btn--card{ 
+    padding:0.5em;
+    border-radius: var(--btn-radius-medium);
+    border-width: 1px;
+    text-wrap: nowrap;
+    font-size:var(--fs-s);
+    width: 100%;
+} 
+
+
+/* universal font size + weight */
+.desc{      /*universal description styling*/
+    font-size: var(--fs-xxs);
+    color: var(--color-text-desc);
+    font-weight: var(--light);  
+}
+
+/* website heading */
+.txt1{
+    font-size: var(--fs-xl);
+    font-weight: var(--xbold);
+    margin-bottom: 1rem;
+    line-height: 3.5rem;;   
+}
+
+/* subtext */
+.txt2{
+    font-size: var(--fs-m);
+    font-weight: var(--demibold);
+    margin-top: 0;
+}
+
+
+.txt--regular-s{
+    font-size: var(--fs-s);
+    font-weight: var(--regular);
+}
+
+.txt--regular-xxs{
+    font-size: var(--fs-xxs);
+    font-weight: var(--light);  
+}
+
+.txt--demibold-xs{
+    font-size: var(--fs-xs);
+    font-weight: var(--demibold);
+}
+
+.txt--demibold-s{
+    font-size: var(--fs-s);
+    font-weight: var(--demibold);
+
+}
+
+.txt--regular-xs{
+    font-size: var(--fs-s);
+    font-weight: var(--demibold);
+}
+
