@@ -11,6 +11,10 @@
 
 @import url(/CSS/home.css);
 
+@import url(/CSS/item_page.css);
+
+@import url(/CSS/Cart.css);
+
 
 
 /* ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML*/
@@ -168,6 +172,7 @@ hr{
 
 footer{
     background-color: var(--color-secondary) ;
+    width: 100vw;
     min-height: 450px;
     display: flex;
     flex-direction: column;
@@ -209,6 +214,7 @@ footer{
     font-size: var(--fs-xs);
     color: var(--color-text-primary);
     text-decoration: none;
+    
 }
 
 /* ------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END------ FOOTER END */

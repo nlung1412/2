@@ -149,7 +149,8 @@
 .price_heart{
     display: flex;
     justify-content: space-between;
-    padding-top:1em;
+    padding-top:1.5em;
+    padding-bottom: 1em;;
 }
 
 .price{
@@ -168,7 +169,7 @@
 }
 
 .card_title{    /*product name*/
-    padding-bottom: 0.25em;
+    padding-bottom: 0px;
     max-width: 264px;
     line-height: var(--linespace-main);
     color: var(--color-text-primary);

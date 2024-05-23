@@ -106,10 +106,12 @@ body{
 
 /* universal font size + weight */
 .desc{      /*universal description styling*/
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xs);
     color: var(--color-text-desc);
     font-weight: var(--light);  
 }
+
+
 
 /* website heading */
 .txt1{
@@ -132,24 +134,32 @@ body{
     font-weight: var(--regular);
 }
 
-.txt--regular-xxs{
-    font-size: var(--fs-xxs);
-    font-weight: var(--light);  
-}
-
-.txt--demibold-xs{
-    font-size: var(--fs-xs);
-    font-weight: var(--demibold);
-}
-
 .txt--demibold-s{
     font-size: var(--fs-s);
     font-weight: var(--demibold);
 
 }
 
+.txt--regular-xxs{
+    font-size: var(--fs-xxs);
+    font-weight: var(--light);  
+}
+
 .txt--regular-xs{
     font-size: var(--fs-s);
     font-weight: var(--regular);
+}
+
+
+.txt--demibold-xs{
+    font-size: var(--fs-xs);
+    font-weight: var(--demibold);
+}
+
+
+
+.txt--demibold-m{
+    font-size: var(--fs-m);
+    font-weight: var(--demibold);
 }
 
