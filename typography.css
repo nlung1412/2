@@ -9,12 +9,12 @@
     /*font-sizing*/
 
     --fs-xl: 60px;  /* main title*/
-    --fs-l: 30px;   /* section heading, footer heading, shopnow*/
-    --fs-m: 25px;   /* subtitle , feature list, recently view, product page title, footer heading*/
-    --fs-s: 20px;   /*Section sub, nav, mission state, feature desc, order summart*/
-    --fs-xs: 15px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
-    --fs-xxs: 13px; /*seemore bnt, language*/
-    --fs-xxxs: 10px;    /*prod desc (expt prod page),  cat on prod cards*/
+    --fs-l: 35px;   /* section heading, footer heading, shopnow*/
+    --fs-m: 30px;   /* subtitle , feature list, recently view, product page title, footer heading*/
+    --fs-s: 25px;   /*Section sub, nav, mission state, feature desc, order summart*/
+    --fs-xs: 20px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+    --fs-xxs: 15px; /*seemore bnt, language*/
+    --fs-xxxs: 13px;    /*prod desc (expt prod page),  cat on prod cards*/
 
 
 
@@ -24,6 +24,7 @@
 
     --xbold: 900;
     --demibold: 700;
+    --bold: 400;
     --regular: 500;
     --light: 300;
 

@@ -106,9 +106,9 @@ body{
 
 /* universal font size + weight */
 .desc{      /*universal description styling*/
-    font-size: var(--fs-xs);
+
     color: var(--color-text-desc);
-    font-weight: var(--light);  
+
 }
 
 
@@ -129,6 +129,30 @@ body{
 }
 
 
+
+
+.txt--regular-xs{
+    font-size: var(--fs-xs);
+    font-weight: var(--light);  
+}
+
+
+
+.txt--demibold-xs{
+    font-size: var(--fs-xs);
+    font-weight: var(--demibold);
+}
+
+.txt--bold-xs{
+    font-size: var(--fs-xs);
+    font-weight: var(--bold);
+}
+
+.txt--bold-s{
+    font-size: var(--fs-s);
+    font-weight: var(--bold);
+}
+
 .txt--regular-s{
     font-size: var(--fs-s);
     font-weight: var(--regular);
@@ -140,21 +164,6 @@ body{
 
 }
 
-.txt--regular-xxs{
-    font-size: var(--fs-xxs);
-    font-weight: var(--light);  
-}
-
-.txt--regular-xs{
-    font-size: var(--fs-s);
-    font-weight: var(--regular);
-}
-
-
-.txt--demibold-xs{
-    font-size: var(--fs-xs);
-    font-weight: var(--demibold);
-}
 
 
 

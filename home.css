@@ -141,8 +141,10 @@
     display: flex;   
     margin: 75px 15%;
     overflow: scroll;
+    max-height: 650.9px;
     gap: 0px; 
     justify-content: space-between;
+    overflow-y: hidden;
 }
 
 /* price and heart div */
@@ -161,7 +163,12 @@
 /* individual product item/ cards in container */
 .card{
     padding: 10px 10px;
-    max-width: 264px;   
+    max-width: 264px; 
+    min-width: 264px;  
+}
+
+.tc_card{
+    width: 100%;
 }
 
 .card > *+*{
@@ -267,9 +274,10 @@
     display: flex; 
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 10px;
+    margin-top: 20px;
     overflow: scroll;
     justify-content: space-between;  
+    overflow-y: hidden;
 }
 
 /* individual product card in container */
@@ -278,6 +286,9 @@
     max-width: 389px;
 }
 
+.person_card{
+    min-width: 369px;
+}
 .sect_desc{
     margin-left: 15%;
     margin-top: 20px;

@@ -11,15 +11,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 35px;
-    margin-top: 10px; 
+    row-gap: 90px;
 
     
 }
 
 .prodlist_card{
     max-width: 290px;
-    max-height: 434px;
-    margin-bottom: 80px;
+    max-height: 480px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -40,7 +39,10 @@
 }
 
 .prod_title{
-    grid-area: name;
+    grid-area: 6/ 1 / 6/ 3; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 250px;
 
 }
 
@@ -65,7 +67,9 @@
 .card_btn{
     grid-area: btn;
     margin-bottom: 5px;
+    width: 100%;
     justify-self: end;
+    justify-content: space-between;
 }
 
 .page_nav{
@@ -74,10 +78,10 @@
 
 
 .filter_list{
-    margin: 30px 0px;
+    margin: 1.5rem 0px;
 }
 
-.filter_list > *+*{
+.filter_list > *{
     margin: 5px;
 }
 
@@ -90,8 +94,8 @@
 }
 
 .filter_btn{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     
 }
 
