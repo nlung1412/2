@@ -1,19 +1,19 @@
 /* importing css files */
-@import url(css/colours.css);       /*colour styles*/
+@import url(colours.css);       /*colour styles*/
 
-@import url(css/typograpy.css);     /*font styles*/
+@import url(typograpy.css);     /*font styles*/
 
 @import url(https://info20005.github.io/Layout-Composition/reset.css);
 
-@import url(css/presets.css);
+@import url(presets.css);
 
-@import url(css/search_results.css);
+@import url(search_results.css);
 
-@import url(css/home.css);
+@import url(home.css);
 
-@import url(css/item_page.css);
+@import url(item_page.css);
 
-@import url(css/Cart.css);
+@import url(Cart.css);
 
 
 
