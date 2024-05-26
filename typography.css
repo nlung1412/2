@@ -31,16 +31,49 @@
     --border-radius-gentle: 5px;
     --btn-radius-medium: 8px;
     --btn-radius-high: 10px;
+    --btn-radius-higher: 20px;
     --btn-radius-highest: 50px;
 
 
 
     --spacing-title-desc: 5px;
     
-
-    --linespace-main: 125%;
     
 
+    --linespace-main: 125%;
+}
+
+@media screen and (max-width: 909px){
+
+:root{
+
+    --fs-xl: 50px;  /* main title*/
+    --fs-l: 30px;   /* section heading, footer heading, shopnow*/
+    --fs-m: 25px;   /* subtitle , feature list, recently view, product page title, footer heading*/
+    --fs-s: 20px;   /*Section sub, nav, mission state, feature desc, order summart*/
+    --fs-xs: 15px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+    --fs-xxs: 13px; /*seemore bnt, language*/
+    --fs-xxxs: 13px;    /*prod desc (expt prod page),  cat on prod cards*/
+}
 
 
 }
+
+@media screen and (max-width: 700px){
+
+    :root{
+    
+        --fs-xl: 30px;  /* main title*/
+        --fs-l: 18px;   /* section heading, footer heading, shopnow*/
+        --fs-m: 15px;   /* subtitle , feature list, recently view, product page title, footer heading*/
+        --fs-s: 12px;   /*Section sub, nav, mission state, feature desc, order summart*/
+        --fs-xs: 10px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+        --fs-xxs: 10px; /*seemore bnt, language*/
+        --fs-xxxs: 13px;    /*prod desc (expt prod page),  cat on prod cards*/
+        --center-align: 25px 10%;
+    }
+
+    
+    
+
+    }

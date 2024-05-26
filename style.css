@@ -93,9 +93,9 @@
 
 /* navigation names: shop all, trending... */
 .navbtn{
-    font-size: var(--fs-s);
     color: var(--color-text-primary);
     text-decoration: none;
+    text-wrap: nowrap;
 }
 
 .nav_language{
@@ -124,13 +124,15 @@
 
 .search_items > input{
     width:70%;
-    height: 2.5em;
+    height: 3em;
     border-radius: 10px;
     border-color: var(--color-text-desc);
 }
 
 .search_icon{
-    padding:0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 1.5rem;
 }
 
 .nav_user{
@@ -145,7 +147,7 @@
 } 
 
 /* navbar breakpoints */
-@media screen and (max-width : 992px){
+/* @media screen and (max-width : 992px){
 
     a.navbtn{
         font-size: var(--fs-xs);
@@ -162,7 +164,7 @@
         
     } 
 
-}
+} */
 
 
 
@@ -184,7 +186,12 @@ footer{
 .foot_container{
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    flex-wrap: wrap;
+    gap: 5em;
+    margin: 0 5%;
+   
+  
+    
 }
 
 .foot_cat> *+*{
@@ -242,11 +249,113 @@ footer{
 */
 
 
-@media screen and (max-width: 1264px ){
+/* feature line disappear */
+
+@media screen and (max-width: 1210px ){
     .vertical{
         display: none;
     }
+}  
+
+
+
+/* remove navigation bar features */
+@media screen and (max-width: 1204px ){
+    .nav_language{
+        display: none;
+    }
+} 
+
+
+
+@media screen and (max-width: 909px){
+    .nav_navigation>a{
+        font-size: var(--fs-s);
+        text-wrap: nowrap;
+        
+    } 
+
+}  
+
+@media screen and (max-width: 390px){
+#background{
+
+    background-image: url("images/mobileheader.png");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+
+
 }
+.hero{
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 80%;
+}
+}
+
+
+@media screen and (max-width: 753px){
+
+    body{
+        margin: 0%;
+    }
+    .nav_navigation>a, .line, .search_bar, .banner{
+        display:none;
+    }
+
+    /* align search icon with cart and profile icons */
+    .bot_nav{
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+    }
+    .search_items{
+        justify-content: flex-end;
+        
+    }
+
+
+
+    .navbar{
+        background-color: #D3D3D380;
+    }
+
+
+    .txt1{
+        font-weight:var(--demibold) ;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn--mainbtn{
+        font-size: var(--fs-s);
+    }
+
+    .vertical{
+        display: flex;
+        border-width: 1px;
+        height: 80px;
+    }
+    
+    .btn--small{
+        display: flex;
+        align-items: center;
+        padding: 0.25em 1em;
+        border-radius: var(--border-radius-gentle);
+        
+
+    }
+
+    .card > *+* {
+        margin: 0.25em 0px;
+    }
+
+
+}  
+
 
 
 

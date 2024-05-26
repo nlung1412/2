@@ -8,7 +8,7 @@
 /* hero section container */
 .hero{
     background-image: url("/images/webbgsmall.png");
-    height: calc(100vh - 158px);
+    min-width: 390px;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -19,15 +19,15 @@
 /* shop now button */
 .hero > a{ 
     margin-top: 10px;
-    margin-bottom: auto;
+    margin-bottom: 3em;;
     margin-left: auto;
-    margin-right: 25%;
+    margin-right: 8%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /* hero text: heading, cta */
 .sidebar{
-    margin-top: 250px;
+    margin-top: 10em;;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: 8%;
@@ -67,7 +67,7 @@
     flex-wrap: wrap; 
     justify-content: center;   
     margin: var(--center-align);  
-    gap: 15px; 
+    gap: 20px; 
 }
 
 .feature{
@@ -95,6 +95,10 @@
     text-align: center;
 }
 
+.feature_img{
+    width: 3em;
+}
+
 .feat_desc{
 
     text-align: center;
@@ -116,11 +120,13 @@
     justify-content: space-between;
     padding: 10px var(--padding-center);
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .sect_title{
     display: flex;
     flex-direction: row;  
+    align-items: center;
 }
 
 .sect_txt{  
@@ -129,7 +135,11 @@
 }
 
 .sect_icon{
-    padding-left:1rem;
+  
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.5em;
+   
 }
 
 #trending_card{
@@ -139,7 +149,7 @@
 /* cards */
 .card_container{
     display: flex;   
-    margin: 75px 15%;
+    margin: var(--center-align);
     overflow: scroll;
     max-height: 650.9px;
     gap: 0px; 
@@ -198,23 +208,29 @@
     gap: 40px;
 }
 
-.mission_box{       /* box for each individual statement */
-    border:2px solid var(--color-text-desc);
-    box-sizing: content-box;
+.mission_box{
     display: flex;
+    border: 2px solid black;
+    /* padding-right: 1.5em;  */
+    border-radius: var(--btn-radius-higher);
+    gap: 1.5em; 
+    width:fit-content;
     align-items: center;
-    border-radius: 20px;
-    width:fit-content
 }
 
 
-.miss_num{      /* numbering for each statement */
-    font-size: var(--fs-l);
-    font-weight: var(--demibold);
+/* .miss_num{
+    
+     background-color: var(--color-primary); 
+    color: var(--color-text-bluebg); 
     padding: 1em;
-    background-color: var(--color-primary);
-    border-radius: 18px;
-    color: var(--color-text-bluebg);
+ height: 100%;
+    border-radius: var(--btn-radius-higher) 0 0 var(--btn-radius-higher);
+
+} */
+
+.num_container{
+    border: 2px solid blue;
     height: 100%;
 }
 
@@ -240,7 +256,7 @@
 .shopby_container{
     display: flex;
     flex-wrap: wrap;
-    margin: 75px 12%;  
+    margin: var(--center-align);
     justify-content: center;
     overflow: hidden;
 }
@@ -272,9 +288,11 @@
 
 .personalise_container{
     display: flex; 
-    margin-left: 15%;
+    margin: var(--center-align);
+    margin-top: 1em;
+    /* margin-left: 15%;
     margin-right: 15%;
-    margin-top: 20px;
+    margin-top: 20px; */
     overflow: scroll;
     justify-content: space-between;  
     overflow-y: hidden;
@@ -290,9 +308,57 @@
     min-width: 369px;
 }
 .sect_desc{
-    margin-left: 15%;
-    margin-top: 20px;
+    /* margin-left: 15%;
+    margin-top: 20px; */
+    margin: 1em 15% 0 15%;
 }
 
 /* ------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END */
+
+
+@media screen and (max-width: 753px){
+   .feature_container{
+    flex-wrap: nowrap;
+    margin: var(--center-align);
+   }
+
+   .feature{
+    padding-top: 0;
+    gap: 0.5em;
+   }
+   .feature_img{
+    width: 2em;
+   }
+
+   .feat_desc{
+    font-size: var(--fs-xs);
+   }
+   .feature_title{
+    font-size: var(--fs-s);
+   }
+
+
+}
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 909px){
+    .nav_navigation>a{
+        display: none;
+    }
+
+}   */
+
+
+
+/* @media screen and (max-width: 700px){
+.sect_icon{
+    width: 1em;
+    height: 1cap;
+}
+} */
 
