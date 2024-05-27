@@ -1,6 +1,11 @@
 /* --------- resets and general style settings -------*/
+html{
+    font-size: 20px;
+} 
+
+
 :root{
-    font-size: var(--fs-s);
+    font-size: var(----text-base-size);
     font-family: var(--font-family);
 }
 
@@ -13,6 +18,7 @@
 body{
     min-height:100vh;
     min-width: 100vw;
+   
 }
 
 .html{
@@ -121,7 +127,7 @@ body{
     font-size: var(--fs-xl);
     font-weight: var(--xbold);
     margin-bottom: 1rem;
-    line-height: 3.5rem;;   
+     
 }
 
 /* subtext */
@@ -132,7 +138,10 @@ body{
 }
 
 
-
+.txt--regular-xxs{
+    font-size: var(--fs-xxs);
+    font-weight: var(--light);  
+}
 
 .txt--regular-xs{
     font-size: var(--fs-xs);
@@ -158,6 +167,10 @@ body{
 
 .txt--regular-s{
     font-size: var(--fs-s);
+    font-weight: var(--regular);
+}
+.txt--regular-m{
+    font-size: var(--fs-m);
     font-weight: var(--regular);
 }
 

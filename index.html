@@ -14,11 +14,7 @@
     <!------- navigation section START ------->
     <nav class=  "navbar">
     
-        <input id = "check" type = "checkbox"> 
-        <label for = "check"  class = "menu_icon">
-            <img id = "hamburger" src = "images/menu.png">
-            <img id = "close" src = "images/closeicon (1).png">
-        </label>
+
      
         <div class = " top_nav">
 
@@ -26,10 +22,10 @@
             
             <div class="nav_navigation">
                 <a href = "index.html"><img class = "logo" src = "images/logo.png"></a>
-                <a href="#" class="navbtn txt--regular-s">Shop all</a>
-                <a href="#" class="navbtn txt--regular-s">Trending</a>
-                <a href="#" class="navbtn txt--regular-s">Sale</a>
-                <a href="#" class="navbtn txt--regular-s">Categories</a>
+                <a href="#" class="navbtn txt--regular-xs">Shop all</a>
+                <a href="#" class="navbtn txt--regular-xs">Trending</a>
+                <a href="#" class="navbtn txt--regular-xs">Sale</a>
+                <a href="#" class="navbtn txt--regular-xs">Categories</a>
             </div>
             <div class="nav_language">ENG/AUD</div>
                 
@@ -39,6 +35,18 @@
 
         <div class = "bot_nav">
             <div class = "search_items">
+                <div class = "left_resnav">
+                    <div>
+                        <input id = "check" type = "checkbox"> 
+                        <label for = "check"  class = "menu_icon">
+                            <img id = "hamburger" src = "images/menu.png">
+                            <img id = "close" src = "images/closeicon (1).png">
+                        </label> 
+                    </div>
+
+                    <a href = "index.html"><img class = "logo res_logo" src = "images/logo.png"></a>
+
+                </div>
                 <input class = "search_bar">
                 <img class = "search_icon" src = "images/search.png">
             </div>
@@ -144,8 +152,8 @@
 
             <div class="card">
                 <img class = "tc_card" src = "images/sectionTCESP.png">
-                <p class = "card_title txt--demibold-s">Especially for You friendship card</p>
-                <p class = "desc txt--regular-xs">Show your love with a friendship card</p>
+                <p class = "card_title txt--demibold-xs">Especially for You friendship card</p>
+                <p class = "desc txt--regular-xxs">Show your love with a card</p>
                 
                 <div class="price_heart">
                     <p class = "price txt--demibold-s">$1 AUD</p>
@@ -157,8 +165,8 @@
 
             <div class="card">
                 <img class = "tc_card" src = "images/sectionTCroses.png">
-                <p class = "card_title txt--demibold-s">Happy Birthday with Roses</p>
-                <p class = "desc txt--regular-xs">Custom card with beautiful roses</p>
+                <p class = "card_title txt--demibold-xs">Happy Birthday with Roses</p>
+                <p class = "desc txt--regular-xxs">Custom card with beautiful roses</p>
                 
                 <div class="price_heart">
                     <p class = "price txt--demibold-s">$1 AUD</p>
@@ -170,8 +178,8 @@
 
             <div class="card">
                 <img class = "tc_card" src = "images/sectionTCcat.png">
-                <p class = "card_title txt--demibold-s">Happy Birthday cute Cat eCard</p>
-                <p class = "desc txt--regular-xs">Let the cat say Happy Birthday </p>
+                <p class = "card_title txt--demibold-xs">Happy Birthday cute Cat eCard</p>
+                <p class = "desc txt--regular-xxs">Let the cat say Happy Birthday </p>
                 
                 <div class="price_heart">
                     <p class = "price txt--demibold-s">$1 AUD</p>
@@ -182,8 +190,8 @@
 
             <div class="card">
                 <img class = "tc_card" src = "images/sectionTCwarm.png">
-                <p class = "card_title txt--demibold-s">Warm Thoughts Birthday Card</p>
-                <p class = "desc txt--regular-xs">Send warm thoughts with this eCard</p>
+                <p class = "card_title txt--demibold-xs">Warm Thoughts Birthday Card</p>
+                <p class = "desc txt--regular-xxs">Send warm thoughts with this eCard</p>
                 
                 <div class="price_heart">
                     <p class = "price txt--demibold-s">$1 AUD</p>
@@ -220,11 +228,11 @@
                 <p class = "miss_txt">To fill the world with love through cards</p>
             </div>
             <div class = "mission_box" id = "box_2">
-                <p class = "miss_num txt--demibold-m">2</p>
+                <div class = "num_container"><p class = "miss_num txt--demibold-m">2</p></div>
                 <p class = "miss_txt">Let them know you are thinking about them</p>
             </div>
-            <span class = "mission_box" id = "box_3">
-                <p class = "miss_num txt--demibold-m">3</p>
+            <div class = "mission_box" id = "box_3">
+                <div class = "num_container"><p class = "miss_num txt--demibold-m">3</p></div>
                 <p class = "miss_txt">Make someone feel extra special with a card</p>
             </span>
 
@@ -309,9 +317,9 @@
             <wrapper class = "card_container personalise_container">
 
                 <div class="card person_card">
-                    <img class = "person_card" src = "images/personRoses.png">
-                    <p class = "card_title txt--demibold-s">Roses Birthday cards</p>
-                    <p class = "desc txt--regular-xs">Customised rose Birthday cards</p>
+                    <img class = "person_img" src = "images/personRoses.png">
+                    <p class = "card_title txt--demibold-xs">Roses Birthday cards</p>
+                    <p class = "desc txt--regular-xxs">Customised rose Birthday cards</p>
                     
                     <div class="price_heart">
                         <p class = "price txt--demibold-s">$1 AUD</p>
@@ -322,9 +330,9 @@
     
     
                 <div class="card person_card">
-                    <img class = "person_card" src = "images/personBird.png">
-                    <p class = "card_title txt--demibold-s">Little Bird eCard</p>
-                    <p class = "desc txt--regular-xs">A great card for wishing well</p>
+                    <img class = "person_img" src = "images/personBird.png">
+                    <p class = "card_title txt--demibold-xs">Little Bird eCard</p>
+                    <p class = "desc txt--regular-xxs">A great card for wishing well</p>
                     
                     <div class="price_heart">
                         <p class = "price txt--demibold-s">$1 AUD</p>
@@ -335,9 +343,9 @@
     
     
                 <div class="card person_card">
-                    <img class = "person_card" src = "images/personBaby.png">
-                    <p class = "card_title txt--demibold-s">Welcome Baby eCard</p>
-                    <p class = "desc txt--regular-xs">Send congratulations to a new parent</p>
+                    <img class = "person_img" src = "images/personBaby.png">
+                    <p class = "card_title txt--demibold-xs">Welcome Baby eCard</p>
+                    <p class = "desc txt--regular-xxs">Send congratulations to a new parent</p>
                     
                     <div class="price_heart">
                         <p class = "price txt--demibold-s">$1 AUD</p>
@@ -347,9 +355,9 @@
                 </div>
     
                 <div class="card person_card">
-                    <img class = "person_card" src = "images/personBike.png">
-                    <p class = "card_title txt--demibold-s">Father's day eCard</p>
-                    <p class = "desc txt--regular-xs">For fathers who love racing</p>
+                    <img class = "person_img" src = "images/personBike.png">
+                    <p class = "card_title txt--demibold-xs">Father's day eCard</p>
+                    <p class = "desc txt--regular-xxs">For fathers who love racing</p>
                     
                     <div class="price_heart">
                         <p class = "price txt--demibold-s">$1 AUD</p>
@@ -406,9 +414,9 @@
             <div class = "foot_cat">
                 <p class = "foot_sub">FOLLOW US</p>
                 <div class = "foot_icon"> 
-                    <img src = "images/Facebook_black.png">
-                    <img src = "images/Instagram_black.png">
-                    <img src = "images/Twitter_black.png">
+                    <img class = "social" src = "images/Facebook_black.png">
+                    <img class = "social" src = "images/Instagram_black.png">
+                    <img class = "social" src = "images/Twitter_black.png">
                 </div>
             </div>
         </div>

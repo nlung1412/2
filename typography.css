@@ -1,20 +1,24 @@
 @import url("https://use.typekit.net/ikh7fdp.css");
 
+/* changing root element size */
+html{
+    font-size: 13px !important;
+}
 :root{
     --font-family: "articulate-cf", sans-serif;
-    --text-base-size: 1.25em;
-    --text-scale-ratio: 1.25;
+    /* --text-base-size: 13px; */
+    
 
 
     /*font-sizing*/
 
-    --fs-xl: 60px;  /* main title*/
-    --fs-l: 35px;   /* section heading, footer heading, shopnow*/
-    --fs-m: 30px;   /* subtitle , feature list, recently view, product page title, footer heading*/
-    --fs-s: 25px;   /*Section sub, nav, mission state, feature desc, order summart*/
-    --fs-xs: 20px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
-    --fs-xxs: 15px; /*seemore bnt, language*/
-    --fs-xxxs: 13px;    /*prod desc (expt prod page),  cat on prod cards*/
+    --fs-xl: 4.62rem;  /* main title*/
+    --fs-l: 2.7rem;   /* section heading, footer heading, shopnow*/
+    --fs-m: 2.31rem;   /* subtitle , feature list, recently view, product page title, footer heading*/
+    --fs-s: 1.92rem;   /*Section sub, nav, mission state, feature desc, order summart*/
+    --fs-xs: 1.54rem;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+    --fs-xxs: 1.15rem; /*seemore bnt, language*/
+    --fs-xxxs: 1rem;    /*prod desc (expt prod page),  cat on prod cards*/
 
 
 
@@ -43,18 +47,31 @@
     --linespace-main: 125%;
 }
 
-@media screen and (max-width: 909px){
+@media screen and (max-width: 700px){
+
+        :root{
+            --fs-xl: 4.62rem;  /* main title*/
+            --fs-l: 2.7rem;   /* section heading, footer heading, shopnow*/
+            --fs-m: 2.31rem;   /* subtitle , feature list, recently view, product page title, footer heading*/
+            --fs-s: 1.92rem;   /*Section sub, nav, mission state, feature desc, order summart*/
+            --fs-xs: 1.54rem;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+            --fs-xxs: 1.15rem; /*seemore bnt, language*/
+            --fs-xxxs: 1rem;    /*prod desc (expt prod page),  cat on prod cards*/
+        }
+    
+}
+
+ @media screen and (max-width: 909px){
 
 :root{
 
-    --fs-xl: 50px;  /* main title*/
-    --fs-l: 30px;   /* section heading, footer heading, shopnow*/
-    --fs-m: 25px;   /* subtitle , feature list, recently view, product page title, footer heading*/
-    --fs-s: 20px;   /*Section sub, nav, mission state, feature desc, order summart*/
-    --fs-xs: 15px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
-    --fs-xxs: 13px; /*seemore bnt, language*/
-    --fs-xxxs: 13px;    /*prod desc (expt prod page),  cat on prod cards*/
-}
+    --fs-xl: 50px;  
+    --fs-l: 30px;   
+    --fs-m: 25px;   
+    --fs-s: 20px;  
+    --fs-xs: 15px;  
+    --fs-xxs: 13px; 
+    --fs-xxxs: 13px;    
 
 
 }
@@ -63,17 +80,17 @@
 
     :root{
     
-        --fs-xl: 30px;  /* main title*/
-        --fs-l: 18px;   /* section heading, footer heading, shopnow*/
-        --fs-m: 15px;   /* subtitle , feature list, recently view, product page title, footer heading*/
-        --fs-s: 12px;   /*Section sub, nav, mission state, feature desc, order summart*/
-        --fs-xs: 10px;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
-        --fs-xxs: 10px; /*seemore bnt, language*/
-        --fs-xxxs: 13px;    /*prod desc (expt prod page),  cat on prod cards*/
+        --fs-xl: 30px; 
+        --fs-l: 18px;   
+        --fs-m: 15px;  
+        --fs-s: 13px;   
+        --fs-xs: 12px;  
+        --fs-xxs: 10px; 
+        --fs-xxxs: 13px;    
         --center-align: 25px 10%;
     }
+} 
 
-    
-    
+} 
 
-    }
+

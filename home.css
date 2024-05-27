@@ -177,9 +177,7 @@
     min-width: 264px;  
 }
 
-.tc_card{
-    width: 100%;
-}
+
 
 .card > *+*{
     margin: 10px 0;
@@ -187,7 +185,7 @@
 
 .card_title{    /*product name*/
     padding-bottom: 0px;
-    max-width: 264px;
+    max-width: 200px;
     line-height: var(--linespace-main);
     color: var(--color-text-primary);
 
@@ -206,32 +204,34 @@
     margin: var(--center-align); 
     padding-bottom:2em;
     gap: 40px;
+  
 }
 
 .mission_box{
-    display: flex;
-    border: 2px solid black;
-    /* padding-right: 1.5em;  */
+    display: flex; 
+    border: 2px solid var(--color-primary);
+    padding-right: 1.5em;  
     border-radius: var(--btn-radius-higher);
     gap: 1.5em; 
-    width:fit-content;
-    align-items: center;
+    align-items: center; 
 }
 
 
-/* .miss_num{
+ .miss_num{
     
-     background-color: var(--color-primary); 
+    background-color: var(--color-primary); 
     color: var(--color-text-bluebg); 
-    padding: 1em;
- height: 100%;
-    border-radius: var(--btn-radius-higher) 0 0 var(--btn-radius-higher);
+    padding: 1.5em;
+    border-radius:var(--btn-radius-higher) 0 0 var(--btn-radius-higher) ;
 
-} */
+} 
 
 .num_container{
-    border: 2px solid blue;
+
+    display: flex;
+    align-items: center;
     height: 100%;
+    border-radius:var(--btn-radius-higher) 0 0 var(--btn-radius-higher) ;
 }
 
 .miss_txt{      /*mission statement*/
@@ -302,11 +302,15 @@
 .person_card{
     padding: 10px 10px;
     max-width: 389px;
+    min-width: 369px;
+   
 }
 
-.person_card{
-    min-width: 369px;
+.person_img{
+    width:100%;
 }
+
+
 .sect_desc{
     /* margin-left: 15%;
     margin-top: 20px; */
