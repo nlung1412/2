@@ -16,6 +16,11 @@
 @import url(Cart.css);
 
 
+@import url(Billing_page.css);
+
+
+
+
 
 /* ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML*/
 
@@ -24,6 +29,11 @@
 .navbar{
     background-color: var( --color-tertiary);  
     padding-bottom: 10px;  
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 
 }
 
@@ -125,12 +135,18 @@
     /* border: 2px solid green; */
 }
 
+.search_bar{
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
 .search_items > input{
     width:70%;
     height: 3em;
     border-radius: 10px;
     border-color: var(--color-text-desc);
 }
+
 
 .search_icon{
     margin-left: 0.5em;
@@ -165,7 +181,8 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 55px 0;
-    gap: 50px;   
+    gap: 50px; 
+    margin-top: 10rem;  
 }
 
 .foot_container{
@@ -323,9 +340,12 @@ footer{
 
 .page_nav{
     width: fit-content;
-   
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
 }
 
 .product_list_container{
@@ -407,8 +427,12 @@ footer{
     max-height: 160px;
 }
 
-.prodlist_desc2, .prodlist_desc1, .prod_title1, .prod_title2{
-    padding: 1em;
+.prod_title1, .prod_title2{
+    padding: 1em 1em 0 1em;
+}
+
+.prodlist_desc2, .prodlist_desc1{
+    padding: 0 1em 0 1em;
 }
 
 .prod_list_seemore{
@@ -427,6 +451,12 @@ footer{
     min-width: 100vw;
     height: 80%;
 }
+
+
+
+
+
+
 }
 
 
@@ -510,6 +540,24 @@ footer{
 
 
 }  
+@media screen and (max-width: 889px){
+
+    .slider_wrapper, .prod_info{
+        width: 100vw;
+    
+    }
+
+    .rv_container{
+        display: none;
+    }
+    
+    
+
+
+
+
+
+}
 
 
 

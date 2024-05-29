@@ -81,7 +81,7 @@
     grid-area: 6/ 1 / 6/ 3; 
     margin-top: 0.5em;
     margin-bottom: 0.25em;
-    width: auto;
+    width: 75%;
 
 
     
@@ -92,7 +92,7 @@
     grid-area: 6/ 1 / 6/ 3; 
     margin-top: 0.5em;
     margin-bottom: 0.25em;
-    width: auto;
+    width: 75%;
 
 }
 
@@ -100,6 +100,7 @@
     grid-area: desc;
     align-self: start;
     margin-top: var(--spacing-title-desc);
+
 }
 
 .prodlist_desc2{
@@ -119,6 +120,7 @@
     justify-self: end;
     align-self: start;
     margin-top: 1.5em;
+    margin-left: 1em
 }
 
 
@@ -166,6 +168,7 @@
 
 .current_page{
     color: var(--color-text-tertiary);
+    padding-left: 0.5em;
 }
 
 .dropdown{
@@ -180,9 +183,14 @@
     
 }
 
-.page_num{
-    align-self: center;
+.page_num_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
 }
+
+
 
 
 

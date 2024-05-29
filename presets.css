@@ -157,12 +157,12 @@ body{
 
 .txt--bold-xs{
     font-size: var(--fs-xs);
-    font-weight: var(--bold);
+    font-weight: var(--xbold);
 }
 
 .txt--bold-s{
     font-size: var(--fs-s);
-    font-weight: var(--bold);
+    font-weight: var(--xbold);
 }
 
 .txt--regular-s{

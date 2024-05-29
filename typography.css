@@ -12,13 +12,13 @@ html{
 
     /*font-sizing*/
 
-    --fs-xl: 4.62rem;  /* main title*/
-    --fs-l: 2.7rem;   /* section heading, footer heading, shopnow*/
-    --fs-m: 2.31rem;   /* subtitle , feature list, recently view, product page title, footer heading*/
-    --fs-s: 1.92rem;   /*Section sub, nav, mission state, feature desc, order summart*/
-    --fs-xs: 1.54rem;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
-    --fs-xxs: 1.15rem; /*seemore bnt, language*/
-    --fs-xxxs: 1rem;    /*prod desc (expt prod page),  cat on prod cards*/
+    --fs-xl: 4.62rem;  /*60 main title*/
+    --fs-l: 2.7rem;   /* 30 section heading, footer heading, shopnow*/
+    --fs-m: 2.31rem;   /* 25subtitle , feature list, recently view, product page title, footer heading*/
+    --fs-s: 1.92rem;   /* 20Section sub, nav, mission state, feature desc, order summart*/
+    --fs-xs: 1.54rem;  /* 15 prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
+    --fs-xxs: 1.15rem; /* 13seemore bnt, language*/
+    --fs-xxxs: 1rem;    /* 10prod desc (expt prod page),  cat on prod cards*/
 
 
 
@@ -40,26 +40,13 @@ html{
 
 
 
-    --spacing-title-desc: 5px;
+    --spacing-title-desc: 0.5em;
     
     
 
     --linespace-main: 125%;
 }
 
-@media screen and (max-width: 700px){
-
-        :root{
-            --fs-xl: 4.62rem;  /* main title*/
-            --fs-l: 2.7rem;   /* section heading, footer heading, shopnow*/
-            --fs-m: 2.31rem;   /* subtitle , feature list, recently view, product page title, footer heading*/
-            --fs-s: 1.92rem;   /*Section sub, nav, mission state, feature desc, order summart*/
-            --fs-xs: 1.54rem;  /* prod name(expt prod page), cat name, item desc (in prod page), Page nav(title), btn (expt seemore, shopall), price, footer item*/
-            --fs-xxs: 1.15rem; /*seemore bnt, language*/
-            --fs-xxxs: 1rem;    /*prod desc (expt prod page),  cat on prod cards*/
-        }
-    
-}
 
  @media screen and (max-width: 909px){
 

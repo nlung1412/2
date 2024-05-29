@@ -9,7 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
+    
+    gap: 5rem;
 }
 .img_carousel{
     display: flex;
@@ -46,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     
 }
 
@@ -75,7 +79,7 @@
 
 .slider_wrapper{
     position: relative;
-    max-width: 80rem;
+    width: 30rem;
     border: 2px solid var(--color-secondary);
     border-radius: var(--btn-radius-medium);
     padding: 1em;
@@ -97,6 +101,7 @@
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
+    width: 100%;
 }
 
 .slider_nav{
@@ -116,9 +121,14 @@
     background-color: var(--color-primary);
     opacity: 0.5;
     transition: opacity ease 250ms;
+    
 
 }
 
 .slider_nav a:hover{
     opacity: 1;
 }
+
+
+
+

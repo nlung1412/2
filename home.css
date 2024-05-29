@@ -47,6 +47,7 @@
     background-color: var(--color-primary);
     color: var(--color-text-bluebg);
     padding: 10px;
+   
 }
 
 .banner > *+*{
@@ -136,8 +137,8 @@
 
 .sect_icon{
   
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     margin-left: 0.5em;
    
 }
@@ -155,7 +156,15 @@
     gap: 0px; 
     justify-content: space-between;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+
 }
+
+.card_container ::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 /* price and heart div */
 .price_heart{
@@ -175,6 +184,7 @@
     padding: 10px 10px;
     max-width: 264px; 
     min-width: 264px;  
+    flex: 0 0  auto;
 }
 
 
@@ -185,11 +195,12 @@
 
 .card_title{    /*product name*/
     padding-bottom: 0px;
-    max-width: 200px;
+    
     line-height: var(--linespace-main);
     color: var(--color-text-primary);
 
 }
+
 
 
 
@@ -347,22 +358,4 @@
 
 
 
-
-
-/* 
-@media screen and (max-width: 909px){
-    .nav_navigation>a{
-        display: none;
-    }
-
-}   */
-
-
-
-/* @media screen and (max-width: 700px){
-.sect_icon{
-    width: 1em;
-    height: 1cap;
-}
-} */
 
