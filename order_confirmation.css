@@ -1,0 +1,135 @@
+.confirm_container{
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+}
+
+.confirm_details{
+    width: 500px;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5em;
+    height: fit-content;  
+}
+
+
+.confirm_details > p {
+    padding: 0 25px;
+
+}
+
+.confirm_details > hr {
+    margin: 0 2em;
+}
+
+
+
+.confirm_container > .confirm_details:nth-child(2){
+    background-color: var(--color-tertiary);
+    gap: 2.5rem;
+    margin-top: 50px;
+}
+
+
+.info_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+dl>p{
+    padding-bottom: 20px; ;
+}
+
+
+dt { 
+    float: left; 
+    clear: left; 
+    width: 10em; 
+    height: 2em;
+    font-size: var(--fs-xs);
+    font-weight: var(--demibold);
+    margin-bottom: 20px;
+}
+
+dd{
+    font-size: var(--fs-xs);
+    margin-bottom: 20px;
+    height: 2em;
+}
+
+
+.thankyou > div{
+    margin-top: 20px;
+    line-height: var(--linespace-main);
+}
+
+.track_btn{
+    padding: 0.5em 3em;
+}
+
+
+ .confirm_sum{
+    width: 498px;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    background-color: var(--color-tertiary);
+}
+    
+
+.sum_details{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.order_line{
+    border-left: 0.25px solid var(--color-primary);
+}
+
+.sum_head{
+    color: var(--color-primary);
+    margin-bottom: 0.25em;
+}
+
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sum_items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+}
+
+.order_sum_info, .sum_price, .img_info>img{
+    padding: 0.5em 10px;
+    gap: 2rem;   
+}
+
+.order_sum_info > *+*{
+    padding-top: 1em;
+    color: var(--color-primary);
+}
+
+
+
+.img_info{
+    display: flex;
+    margin-right: 40px;
+}
+
+
+@media screen and (max-width: 626px){
+    .confirm_details{
+        width: 100%;
+    }
+}
