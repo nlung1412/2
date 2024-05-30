@@ -19,6 +19,8 @@
 
 @import url(order_confirmation.css);
 
+@import url(added_to_cart.css);
+
 
 
 
@@ -436,11 +438,6 @@ footer{
     padding: 0 1em 0 1em;
 }
 
-.prod_list_seemore{
-    width:fit-content;
-    padding: 0.5em 1em;
-    margin: 1rem;
-}
 
 
 /* home page header responsiveness  */

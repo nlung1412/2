@@ -91,7 +91,7 @@
 }  
 
 .feature_title{
-    font-size: var(--fs-m);
+    font-size: var(--fs-s);
     font-weight: var(--regular);
     text-align: center;
 }
@@ -346,10 +346,10 @@
    }
 
    .feat_desc{
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxs);
    }
    .feature_title{
-    font-size: var(--fs-s);
+    font-size: var(--fs-xs);
    }
 
 

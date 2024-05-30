@@ -46,6 +46,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    grid-area: btn;
+    margin-bottom: 5px;
+    width: 100%;
+    justify-self: end;
+    justify-content: space-between;
 }
 .prod_list_img{
     grid-area: img;  
@@ -74,7 +79,8 @@
     border-radius: var(--border-radius-gentle) ;
     width: fit-content;
     padding: 0.5em 1.5em;
-    font-size: var(--fs-xs);
+    margin: 1rem;
+    
 }
 
 .prod_title1{
@@ -128,13 +134,6 @@
 
 
 
-.card_btn{
-    grid-area: btn;
-    margin-bottom: 5px;
-    width: 100%;
-    justify-self: end;
-    justify-content: space-between;
-}
 
 .page_nav{
     display: flex;

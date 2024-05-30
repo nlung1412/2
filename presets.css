@@ -3,6 +3,10 @@ html{
     font-size: 20px;
 } 
 
+a{
+    text-decoration: none;
+}
+
 
 :root{
     font-size: var(----text-base-size);
@@ -108,7 +112,7 @@ body{
     border-radius: var(--btn-radius-medium);
     border-width: 1px;
     text-wrap: nowrap;
-    font-size:var(--fs-s);
+    font-size:var(--fs-xs);
     width: 100%;
 } 
 
@@ -194,6 +198,10 @@ body{
 
 .txt--demibold-m{
     font-size: var(--fs-m);
+    font-weight: var(--demibold);
+}
+.txt--demibold-l{
+    font-size: var(--fs-l);
     font-weight: var(--demibold);
 }
 

@@ -74,7 +74,7 @@
 
 
 
-.cart_close, .cart_info> p{
+.cart_close, .cart_info> p, .cart_info{
     padding-top: 1rem;
     max-width: 85%;
 }
