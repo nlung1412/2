@@ -324,6 +324,11 @@ footer{
 
 }
 
+.popup_background{
+    top: 115px;
+}
+
+
 .hero>a{
 
     margin: 1rem 5% 2rem auto;

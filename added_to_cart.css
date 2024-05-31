@@ -1,6 +1,6 @@
 .popup_background{
     position: absolute;
-    top: 115px;
+    top: 0;
     height: 150%;
     width: 100vw;
     background-color: rgba(211, 211, 211, 0.6);  
