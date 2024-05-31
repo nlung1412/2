@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class = "trial_container" id = "popup" > 
+    <div class = "popup_background" id = "popup" > 
         
         <div class = "popup_container">
             <div class="popup" >
@@ -19,7 +19,7 @@
                 </div>
                 <div class = "pop_btn">
                     <a href = "index.html" class = "btn btn--white txt--demibold-xs">Continue shopping</a>
-                    <a href = "Cart.html" class = "btn btn--lightblue txt--demibold-xs" onclick="closePopup()">Go to cart</a>
+                    <a href = "Cart2.html" class = "btn btn--lightblue txt--demibold-xs" onclick="closePopup()">Go to cart</a>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
         <section id = "prod_page">
 
             <div class="page_nav">
-                <p class = "desc past_page txt--bold-xxs">HOME &nbsp/&nbsp BIRTHDAY CARDS &nbsp/&nbsp </p>
+                <p class = "desc past_page txt--demibold-xxs">HOME &nbsp/&nbsp BIRTHDAY CARDS &nbsp/&nbsp </p>
                 <p class = "desc current_page txt--demibold-xxs">DAISY HAPPY BIRTHDAY ECARD</p>
             </div>  
 
@@ -68,13 +68,17 @@
 
                     <div class = "price_heart">
                         <p class = "price txt--demibold-s">$1</p>
-                        <div class = "btn btn--small btn--white">see more</div>
+                        <div class = "qty">
+                            <span class = "down">-</span>
+                            <span class = "num">1</span>
+                            <span class = "plus">+</span>
+                        </div>
                     </div>
 
                     <div class = "btn_group">
 
-                        <a href = "#" class = "add_to btn btn--card btn--white txt--demibold-xs"><img class = "add_icon" src = "images/Heartfilled.png">Add to Favourites</a>
-                        <a href = "#" class = "add_to btn btn--card btn--lightblue txt--demibold-xs" onclick = "showPopup()"><img class = "add_icon add_cart" src = "images/cart.png">Add to Shopping Cart</a>
+                        <a href = "#" class = "add_to add_to_fav btn btn--card btn--white txt--demibold-xs"><img class = "add_icon" src = "images/Heartfilled.png">Add to Favourites</a>
+                        <a href = "#" class = "add_to add_to_cart btn btn--card btn--lightblue txt--demibold-xs" onclick = "showPopup()"><img class = "add_icon add_cart" src = "images/cart.png">Add to Shopping Cart</a>
                     </div>
                 </div>
 
@@ -146,6 +150,7 @@
 
             <footer class = "footer"></footer>
             <script src = "footer.js"></script> 
+            <script src = "script.js"></script>
 
 
 <!--Universal footer END-->
@@ -154,6 +159,8 @@
         </section>
     
 <script src = "features.js"></script>
+
+
 
   
 </body>

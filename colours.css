@@ -46,8 +46,8 @@
 /* padding */
 
     --padding-center: 15%;
-    --center-align: 75px 15%;    /* margin*/
-  
+    --center-align: 35px 15%;    /* margin*/
+    --center-align-respon: 150px 15%
 
 
 /* card spacing */
