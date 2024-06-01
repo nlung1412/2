@@ -198,8 +198,8 @@
 /* individual product item/ cards in container */
 .card{
     padding: 10px 10px;
-    max-width: 264px; 
-    min-width: 264px;  
+    max-width: 230px; 
+    min-width: 230px;  
     flex: 0 0  auto;
 }
 
@@ -211,10 +211,14 @@
 
 .card_title{    /*product name*/
     padding-bottom: 0px;
-    
+    height: 2.5em;
     line-height: var(--linespace-main);
     color: var(--color-text-primary);
 
+}
+
+.card2_title{
+    height: 1em;
 }
 
 
@@ -249,7 +253,7 @@
     background-color: var(--color-primary); 
     color: var(--color-text-bluebg); 
     padding: 1.5em;
-    border-radius:var(--btn-radius-higher) 0 0 var(--btn-radius-higher) ;
+    border-radius: 12px 0 0 12px ;
 
 } 
 
@@ -286,6 +290,7 @@
     margin: var(--center-align);
     justify-content: center;
     overflow: hidden;
+
 }
 
 /* img+catname */
@@ -294,6 +299,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
+    position: relative;
 }
 
 /* re-position cat_name to overlap image */
@@ -303,11 +309,12 @@
 .cat_btn{
     position: relative;
     z-index: 2;
-    top:280px;
+  top:280px;
 }
 
 .cat_img{
     z-index: 1;
+    /* width: 100% */
 }
 
 

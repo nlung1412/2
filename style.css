@@ -308,6 +308,30 @@ footer{
         
     } 
 
+    .hero{
+        height: 500px;
+    }
+
+    .cat_card{
+
+        width: 50%; 
+    }
+    
+    .cat_btn{
+         top:121.77px;
+         right: 32px;
+        border-radius: var(--btn-radius-medium);
+        width: 115px;
+        margin: 0 0 7px 7px; 
+        
+    } 
+
+    .cat_img{
+        z-index: 1;
+         width: 100% ;
+         position: relative;
+    }
+
 }  
 
 /*----- header responsiveness, trending card page -----*/
@@ -506,8 +530,32 @@ footer{
     #prod_page{
         margin: var(--center-align-respon);
     }
-    #cart_container{
+    #cart_container, #billing_container, .confirm_container{
         margin-top: 150px;
+    }
+ 
+    .card_title{
+        height: 1.5em;
+    } 
+
+    .prodlist_price1, .prodlist_price2 {
+     margin-top: 1.5em;
+     padding-top: 0;
+    }
+
+    .prodlist_desc1, .prodlist_desc2{
+        margin-top: 0;
+    }
+
+    .results_container{
+        gap: 20px;
+    }
+    
+
+    
+
+    .prod_title1, .prod_title2{
+        height: fit-content;
     }
 
     /* -----navbar responsiveness----- */
@@ -647,7 +695,8 @@ footer{
     }
 
     .sect_banner{
-        border-width: 2px
+        border-width: 2px;
+        padding: 15px 10%;
     }
 
 

@@ -1,7 +1,7 @@
 .results_container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     margin: var(--center-align);   
     
 }
@@ -10,14 +10,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 40px;
     row-gap: 90px;
 
     
 }
 
 .prodlist_card1{
-    width: 290px;
+    width: 370px;
     max-height: 480px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -29,7 +29,7 @@
 }
 
 .prodlist_card2{
-    width: 290px;
+    width: 370px;
     max-height: 480px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -55,7 +55,7 @@
 .prod_list_img{
     grid-area: img;  
     display: flex;
-    width: auto;
+    width: 370px;
     align-self: center;
     justify-self: center;
 }
@@ -79,14 +79,15 @@
     border-radius: var(--border-radius-gentle) ;
     width: fit-content;
     padding: 0.5em 1.5em;
-    margin: 1rem;
+    margin: 0 1rem 0 0;
     
 }
 
-.prod_title1{
+.prod_title1, .prod_title2{
     grid-area: 6/ 1 / 6/ 3; 
     margin-top: 0.5em;
-    margin-bottom: 0.25em;
+    margin-bottom: 1em;
+    padding-top: 2em;
     width: 75%;
 
 
@@ -94,40 +95,23 @@
 
 }
 
-.prod_title2{
-    grid-area: 6/ 1 / 6/ 3; 
+
+.prodlist_desc1,.prodlist_desc2{
+    grid-area: desc;
+    align-self: start;
+    margin-top: 2em;
+
+
+}
+
+.prodlist_price1, .prodlist_price2{
+    grid-area: price;
+    justify-self: end;
+    align-self: start;
     margin-top: 0.5em;
-    margin-bottom: 0.25em;
-    width: 75%;
-
+    padding-top: 2em;
 }
 
-.prodlist_desc1{
-    grid-area: desc;
-    align-self: start;
-    margin-top: var(--spacing-title-desc);
-
-}
-
-.prodlist_desc2{
-    grid-area: desc;
-    align-self: start;
-    margin-top: var(--spacing-title-desc);
-}
-.prodlist_price1{
-    grid-area: price;
-    justify-self: end;
-    align-self: start;
-    margin-top: 1.5em;
-}
-
-.prodlist_price2{
-    grid-area: price;
-    justify-self: end;
-    align-self: start;
-    margin-top: 1.5em;
-    margin-left: 1em
-}
 
 
 

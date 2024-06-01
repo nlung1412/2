@@ -110,7 +110,7 @@ dd{
   
 }
 
-.order_sum_info, .sum_price, .img_info>img{
+.order_sum_info, .img_info>img{
     padding: 0.5em 10px;
     gap: 2rem;   
 }
@@ -119,6 +119,14 @@ dd{
     padding-top: 1em;
     color: var(--color-primary);
 }
+
+.order_sum_info{
+    width: 100px;
+}
+.sum_price{
+padding-top: 0.5em;
+}
+
 
 
 
