@@ -7,7 +7,7 @@
 
 /* hero section container */
 .hero{
-    background-image: url("images/desktopBG.png");
+    background-image: url("css/desktopBG.png");
     min-width: 390px;
     height: 700px;
     background-size: cover;
