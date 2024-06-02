@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
-    row-gap: 90px;
+    gap: 20px;
+    row-gap: 60px;
 
     
 }
