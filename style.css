@@ -1,11 +1,14 @@
 /* importing css files */
-@import url("css/colours.css");       /*colour styles*/
 
-@import url("css/typography.css");     /*font styles*/
+ /*colour styles*/
+@import url("css/colours.css");      
 
+ /*font styles*/
+@import url("css/typography.css");    
 
+/* BEM class presets */
+@import url("css/presets.css");         
 
-@import url("css/presets.css");
 
 @import url("css/search-results.css");
 
@@ -25,7 +28,7 @@
 
 
 
-/* ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML ---INDEX.HTML*/
+
 
 /* -----------------------NAVIGATION------------------- */
 
@@ -189,7 +192,6 @@
     width: 25px;
     height: 2px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     background-color: black;
 }
 
@@ -218,8 +220,6 @@ footer{
     flex-wrap: wrap;
     gap: 5em;
     margin: 0 5%;
-   
-  
     
 }
 
@@ -264,25 +264,10 @@ footer{
 
 
 
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
 
 
-
-
-
-
-
-
-/* MEDIA QUERIES FOR INDEX.HTML:
-- make title, subtitle smaller USE RESPONSIVE TYPOGRAPHY (12.5 lecture)
-- responsive nav bar 
-- hide lines in feature
-- fix section banenrs
-- resize boxes for mission statements
-- footer resize
-*/
-
-
-/* feature line disappear */
+/* feature lines disappear */
 
 @media screen and (max-width: 1210px ){
     .vertical{
@@ -305,15 +290,16 @@ footer{
     .nav_navigation>a{
         font-size: var(--fs-s);
         text-wrap: nowrap;
-        
-    } 
+    }
+    
+    /* home page */
 
     .hero{
         height: 500px;
     }
-
+    
+    /* categories resizing */
     .cat_card{
-
         width: 50%; 
     }
     
@@ -334,27 +320,30 @@ footer{
 
 }  
 
-/*----- header responsiveness, trending card page -----*/
 
 
 @media screen and (max-width: 390px){
-#background, #results_header{
 
+    
+/* hero */
+#background, #results_header{
     background-image: url("images/mobileheader.png");
     background-size: cover;
-    
     background-repeat: no-repeat;
-
-
 }
 
-.popup_background{
-    top: 115px;
-}
 
+/* home page header responsiveness  */
+.hero{
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 80%;
+}
 
 .hero>a{
-
     margin: 1rem 5% 2rem auto;
 
 }
@@ -364,7 +353,16 @@ footer{
 }
 
 
-/* trending cards header responsiveness */
+/* add to cart popup background */
+.popup_background{
+    top: 115px;
+}
+
+
+
+
+/* search results page */
+
 #results_header{
     height: 30vh;
 }
@@ -380,7 +378,6 @@ footer{
     border-right: none;
     width: 100vw;
 }
-
 
 
 .filter_vertical{
@@ -436,12 +433,12 @@ footer{
 .results_container{
     margin: 25px 0;
 }
+
 .prodlist_card2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     max-height: 185px;
     width: 100vw;
-    /* border: 2px solid green; */
     grid-template-areas: "img img price name" "img img desc desc" 
     "img img desc desc" "img img btn btn";
 
@@ -471,10 +468,7 @@ footer{
 }
 
 .prod_title2{
-    grid-area: 1 / 3 / 1 / 5;  
-    /* text-wrap: balance; */
-    /* border: 2px solid black; */
-    
+    grid-area: 1 / 3 / 1 / 5;
     text-align: right;
     justify-self: end;  
 
@@ -503,22 +497,10 @@ footer{
 
 
 
-/* home page header responsiveness  */
-.hero{
-    background-image: none;
-    background-position: center;
-    background-size: cover;
-    max-width: 100vw;
-    min-width: 100vw;
-    height: 80%;
-}
-
-
-
-
-
 
 }
+
+
 
 
 @media screen and (max-width: 753px){
@@ -527,6 +509,35 @@ footer{
         margin: 0%;
     }
 
+/*------- feature responsiveness------- */
+        
+    /* FEATURE SECTION reduce size and no wrap */
+   .feature_container{
+    flex-wrap: nowrap;
+    margin: var(--center-align);
+   }
+
+   .feature{
+    padding-top: 0;
+    gap: 0.5em;
+   }
+   .feature_img{
+    width: 2em;
+   }
+
+   .feat_desc{
+    font-size: var(--fs-xxs);
+   }
+   .feature_title{
+    font-size: var(--fs-xs);
+   }
+
+
+
+
+
+
+/* item page */
     #prod_page{
         margin: var(--center-align-respon);
     }
@@ -550,13 +561,11 @@ footer{
     .results_container{
         gap: 20px;
     }
-    
-
-    
 
     .prod_title1, .prod_title2{
         height: fit-content;
     }
+
 
     /* -----navbar responsiveness----- */
 
@@ -583,17 +592,18 @@ footer{
         z-index: 9999;
 
     }
-    .hamburger.active{
+
+    /* responsive hamburger menu */
+    .hamburger.change{
         position: fixed;
     }
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.change .bar:nth-child(2){
         opacity: 0
     }
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.change .bar:nth-child(1){
         transform: translateY(7px) rotate(45deg);
-
     }
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.change .bar:nth-child(3){
         transform: translateY(-7px) rotate(-45deg)
 
     }
@@ -632,7 +642,7 @@ footer{
         text-transform: uppercase;
     }
 
-    .nav_navigation.active{
+    .nav_navigation.change{
         display:flex;
         padding: 20% 40px;
         align-items: flex-start;
@@ -654,16 +664,12 @@ footer{
         width: 100%;
     }
 
-    /* .search_items{
-        justify-content: flex-end;
-    } */
+
+/*------ nav responsive end ------*/
 
 
 
-
-
-
-
+/* miscellaneous styling */
     .txt1{
         font-weight:var(--demibold) ;
         margin-bottom: 0.5rem;
@@ -699,8 +705,9 @@ footer{
         padding: 15px 10%;
     }
 
-
 }  
+
+
 @media screen and (max-width: 889px){
 
     .slider_wrapper, .prod_info{
@@ -708,15 +715,10 @@ footer{
     
     }
 
-    .rv_container{
+    .rv_container, .recenty_viewed{
         display: none;
     }
     
-    
-
-
-
-
 
 }
 

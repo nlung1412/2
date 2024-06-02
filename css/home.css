@@ -201,7 +201,9 @@
     margin: 10px 0;
 }
 
-.card_title{    /*product name*/
+
+/*product name*/
+.card_title{    
     padding-bottom: 0px;
     height: 2.5em;
     line-height: var(--linespace-main);
@@ -212,10 +214,6 @@
 .card2_title{
     height: 1em;
 }
-
-
-
-
 
 
 
@@ -237,6 +235,7 @@
     border-radius: var(--btn-radius-higher);
     gap: 1.5em; 
     align-items: center; 
+    width: fit-content
 }
 
 
@@ -257,7 +256,9 @@
     border-radius:var(--btn-radius-higher) 0 0 var(--btn-radius-higher) ;
 }
 
-.miss_txt{      /*mission statement*/
+
+ /*mission statement*/
+.miss_txt{     
     font-size: var(--fs-m);
     font-weight: var(--regular);
     color: var(--color-primary);
@@ -306,7 +307,6 @@
 
 .cat_img{
     z-index: 1;
-    /* width: 100% */
 }
 
 
@@ -316,9 +316,6 @@
     display: flex; 
     margin: var(--center-align);
     margin-top: 1em;
-    /* margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20px; */
     overflow: scroll;
     justify-content: space-between;  
     overflow-y: hidden;
@@ -346,29 +343,6 @@
 /* ------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END------ INDEX END */
 
 
-@media screen and (max-width: 753px){
-   .feature_container{
-    flex-wrap: nowrap;
-    margin: var(--center-align);
-   }
-
-   .feature{
-    padding-top: 0;
-    gap: 0.5em;
-   }
-   .feature_img{
-    width: 2em;
-   }
-
-   .feat_desc{
-    font-size: var(--fs-xxs);
-   }
-   .feature_title{
-    font-size: var(--fs-xs);
-   }
-
-
-}
 
 
 

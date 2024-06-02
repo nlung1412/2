@@ -2,15 +2,16 @@
 
 /* changing root element size */
 html{
-    font-size: 13px !important;
+    font-size: 13px !important; 
 }
+
 :root{
     --font-family: "articulate-cf", sans-serif;
     /* --text-base-size: 13px; */
     
 
 
-    /*font-sizing*/
+    /*font-sizing default*/
 
     --fs-xl: 4.62rem;  /*60 main title*/
     --fs-l: 2.7rem;   /* 30 section heading, footer heading, shopnow*/
@@ -32,22 +33,22 @@ html{
     --regular: 500;
     --light: 300;
 
+
+/* border radius variables */
     --border-radius-gentle: 5px;
     --btn-radius-medium: 8px;
     --btn-radius-high: 10px;
-  
     --btn-radius-higher: 20px;
     --btn-radius-highest: 50px;
 
 
-
+/* common spacing */
     --spacing-title-desc: 0.5em;
-    
-    
-
     --linespace-main: 125%;
 }
 
+
+/* responsive font-sizing */
 
  @media screen and (max-width: 909px){
 

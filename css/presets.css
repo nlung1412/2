@@ -7,7 +7,6 @@ a{
     text-decoration: none;
 }
 
-
 :root{
     font-size: var(----text-base-size);
     font-family: var(--font-family);
@@ -31,11 +30,11 @@ body{
 }
 
 
-/* ------  BEM universal button CSS --------*/
+/* ------  BEM universal buttons CSS --------*/
+/* default btn style */
 .btn{
     text-decoration: none;
     border: 2px solid var(--btn-txt-primary);
-    
 
 } 
 
@@ -125,7 +124,7 @@ body{
 
 
 
-/* website heading */
+/* major headings */
 .txt1{
     font-size: var(--fs-xl);
     font-weight: var(--xbold);
@@ -141,6 +140,9 @@ body{
 }
 
 
+/*----- font weights and sizing----- */
+
+/* regular styles */
 .txt--regular-xxs{
     font-size: var(--fs-xxs);
     font-weight: var(--light);  
@@ -150,9 +152,16 @@ body{
     font-size: var(--fs-xs);
     font-weight: var(--light);  
 }
+.txt--regular-s{
+    font-size: var(--fs-s);
+    font-weight: var(--regular);
+}
+.txt--regular-m{
+    font-size: var(--fs-m);
+    font-weight: var(--regular);
+}
 
-
-
+/* demibold styles */
 .txt--demibold-xs{
     font-size: var(--fs-xs);
     font-weight: var(--demibold);
@@ -165,6 +174,7 @@ body{
 }
 
 
+/* bold styles */
 .txt--bold-xs{
     font-size: var(--fs-xs);
     font-weight: var(--xbold);
@@ -175,25 +185,14 @@ body{
     font-weight: var(--xbold);
 }
 
-.txt--regular-s{
-    font-size: var(--fs-s);
-    font-weight: var(--regular);
-}
-.txt--regular-m{
-    font-size: var(--fs-m);
-    font-weight: var(--regular);
-}
+
+/* demibold styles */
 
 .txt--demibold-s{
     font-size: var(--fs-s);
     font-weight: var(--demibold);
 
 }
-
-
-
-
-
 
 
 .txt--demibold-m{

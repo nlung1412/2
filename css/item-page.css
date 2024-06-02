@@ -79,11 +79,13 @@
 
 } 
 
-
+.recently_viewed{
+    margin-top: 50px;
+}
 .rv_container{
     display: flex; 
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 10px;
     overflow: scroll;
     justify-content: space-between;  
     overflow-y: hidden;

@@ -16,7 +16,7 @@
     
 }
 
-.prodlist_card1{
+.prodlist_card1, .prodlist_card2{
     width: 370px;
     max-height: 480px;
     display: grid;
@@ -27,19 +27,6 @@
     justify-items: start;
     align-items: end;
 }
-
-.prodlist_card2{
-    width: 370px;
-    max-height: 480px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img img"
-    "img img" "img img" "img img" "img img" "name price" "desc desc" "btn btn";
-    justify-items: start;
-    align-items: end;
-}
-
 
 
 .card_btn{
@@ -89,10 +76,6 @@
     margin-bottom: 1em;
     padding-top: 2em;
     width: 75%;
-
-
-    
-
 }
 
 
@@ -115,11 +98,6 @@
 
 
 
-
-
-
-
-
 .page_nav{
     display: flex;
 }
@@ -134,16 +112,11 @@
 }
 
 .res_filter{
-     display: none; 
-    
-    
+    display: none; 
     justify-content: center;
     border: 2px solid var(--color-primary);
     width: 100vw;
 }
-
-
-
 
 
 .filter_list > *{

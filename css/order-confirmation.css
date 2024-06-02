@@ -125,16 +125,9 @@ padding-top: 0.5em;
 }
 
 
-
-
 .img_info{
     display: flex;
     margin-right: 40px;
 }
 
 
-@media screen and (max-width: 626px){
-    .confirm_details{
-        width: 100%;
-    }
-}

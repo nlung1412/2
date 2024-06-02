@@ -30,9 +30,9 @@
 
 
     /* button colours */
-    --btn-txt-primary:var(--color-primary);         /*txt to blue*/
+    --btn-txt-primary:var(--color-primary);         /*blue text*/
     --btn-primary-bg: var(--color-text-white);      /*bg white*/
-    --btn-txt-hover: var(--color-text-white);       /* txt to white*/
+    --btn-txt-hover: var(--color-text-white);       /* white text*/
     --btn-bg-hover: var(--color-primary);           /* bg blue*/
 
     --btn-cat-bg-primary: var(--color-primary);     /*cat name bg to BLUE BUTTONM*/
@@ -43,15 +43,11 @@
 
 
 
-/* padding */
+/* layouts: padding and margins */
 
     --padding-center: 15%;
     --center-align: 35px 15%;    /* margin*/
-    --center-align-respon: 150px 15%
-
-
-/* card spacing */
-
+    --center-align-respon: 150px 15%           /* responsive section margins*/
 
 
 
