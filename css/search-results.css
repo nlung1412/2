@@ -17,7 +17,7 @@
 }
 
 .prodlist_card1, .prodlist_card2{
-    width: 370px;
+    width: 289px;
     max-height: 480px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -42,7 +42,7 @@
 .prod_list_img{
     grid-area: img;  
     display: flex;
-    width: 370px;
+    width: 289px;
     align-self: center;
     justify-self: center;
 }
@@ -73,8 +73,7 @@
 .prod_title1, .prod_title2{
     grid-area: 6/ 1 / 6/ 3; 
     margin-top: 0.5em;
-    margin-bottom: 1em;
-    padding-top: 2em;
+    margin-bottom: 0.5em;
     width: 75%;
 }
 
@@ -82,7 +81,6 @@
 .prodlist_desc1,.prodlist_desc2{
     grid-area: desc;
     align-self: start;
-    margin-top: 2em;
     margin-bottom: 1em;
 
 
