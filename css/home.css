@@ -47,7 +47,7 @@
     flex-wrap: nowrap;  
     overflow: hidden;
     text-overflow: clip; 
-    background-color: var(--color-primary);
+    background-color: var(--color-dominant);
     color: var(--color-text-bluebg);
     padding: 10px;
    
@@ -116,7 +116,7 @@
 /* ------------Sections: TRENDING CARD -------------*/
 
 .sect_banner{
-    border: 3px solid var(--color-primary);
+    border: 3px solid var(--color-dominant);
     border-left: 0;
     border-right: 0;
     display: flex;
@@ -183,7 +183,7 @@
 }
 
 .price{
-    color: var(--color-primary)
+    color: var(--color-dominant)
 }
 
 
@@ -207,7 +207,7 @@
     padding-bottom: 0px;
     height: 2.5em;
     line-height: var(--linespace-main);
-    color: var(--color-text-primary);
+    color: var(--color-text-dominant);
 
 }
 
@@ -230,7 +230,7 @@
 
 .mission_box{
     display: flex; 
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-dominant);
     padding-right: 1.5em;  
     border-radius: var(--btn-radius-higher);
     gap: 1.5em; 
@@ -241,7 +241,7 @@
 
  .miss_num{
     
-    background-color: var(--color-primary); 
+    background-color: var(--color-dominant); 
     color: var(--color-text-bluebg); 
     padding: 1.5em;
     border-radius: 12px 0 0 12px ;
@@ -261,7 +261,7 @@
 .miss_txt{     
     font-size: var(--fs-m);
     font-weight: var(--regular);
-    color: var(--color-primary);
+    color: var(--color-dominant);
     padding: 1em;
     padding-right:2em ;
 }

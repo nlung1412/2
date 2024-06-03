@@ -3,42 +3,42 @@
 :root{
 
     /*element colour*/
-    --color-primary: #0E1F65 ;      /*primary*/
-    --color-secondary: #878FB2;     /*footer, btn*/
-    --color-tertiary: #D3D3D3;      /* nav bar*/
+    --color-dominant: #0E1F65 ;      /*dominant*/
+    --color-complement: #878FB2;     /*footer, btn*/
+    --color-accent: #D3D3D3;      /* nav bar*/
 
 
 
     /*general text colour*/
-    --color-text-primary: #000000;  /*headings, product titles*/
-    --color-text-secondary: #828582;    /* grey text (desc) colour*/
-    --color-text-tertiary: #0E1F65;     /*btn txt, price, nav title, catcard name, mission txt*/
+    --color-text-dominant: #000000;  /*headings, product titles*/
+    --color-text-complement: #828582;    /* grey text (desc) colour*/
+    --color-text-accent: #0E1F65;     /*btn txt, price, nav title, catcard name, mission txt*/
     --color-text-white: #FFFFFF;        /*banner */
 
 
 
     /* Allocating text colours */
-    --color-text-heading: var(--color-text-primary);        /*title*/
-    --color-text-body: var(--color-text-primary);       /*sect heading, feature, footer, nav*/
-    --color-text-subtitle: var(--color-text-primary);       /*subtitles*/
+    --color-text-heading: var(--color-text-dominant);        /*title*/
+    --color-text-body: var(--color-text-dominant);       /*sect heading, feature, footer, nav*/
+    --color-text-subtitle: var(--color-text-dominant);       /*subtitles*/
     --color-text-bluebg: var(--color-text-white);       /*txt agains blue bg (banner)*/
-    --color-text-desc: var(--color-text-secondary);     /*prod desc*/
+    --color-text-desc: var(--color-text-complement);     /*prod desc*/
          
 
     /* dividers */
-    --color-divider: var(--color-primary);      /* section, product divider colour*/
+    --color-divider: var(--color-dominant);      /* section, product divider colour*/
 
 
     /* button colours */
-    --btn-txt-primary:var(--color-primary);         /*blue text*/
-    --btn-primary-bg: var(--color-text-white);      /*bg white*/
+    --btn-txt-dominant:var(--color-dominant);         /*blue text*/
+    --btn-dominant-bg: var(--color-text-white);      /*bg white*/
     --btn-txt-hover: var(--color-text-white);       /* white text*/
-    --btn-bg-hover: var(--color-primary);           /* bg blue*/
+    --btn-bg-hover: var(--color-dominant);           /* bg blue*/
 
-    --btn-cat-bg-primary: var(--color-primary);     /*cat name bg to BLUE BUTTONM*/
-    --btn-cat-bg-secondary: var(--color-tertiary);     /*cat name bg to GRAY BUTTON*/
-    --btn-cat-txt-secondary: var(--color-primary);      /*cat name txt to blue GRAY BUTTON*/
-    --btn-cat-txt-primary: var(--color-text-white);     /*cat name txt to white BLUE BUTTON*/
+    --btn-cat-bg-dominant: var(--color-dominant);     /*cat name bg to BLUE BUTTONM*/
+    --btn-cat-bg-complement: var(--color-accent);     /*cat name bg to GRAY BUTTON*/
+    --btn-cat-txt-complement: var(--color-dominant);      /*cat name txt to blue GRAY BUTTON*/
+    --btn-cat-txt-dominant: var(--color-text-white);     /*cat name txt to white BLUE BUTTON*/
 
 
 

@@ -32,7 +32,7 @@
 /* -----------------------NAVIGATION------------------- */
 
 .navbar{
-    background-color: var( --color-tertiary);  
+    background-color: var( --color-accent);  
     padding-bottom: 10px;  
     position: sticky;
     top: 0;
@@ -111,13 +111,13 @@
 
 /* navigation names: shop all, trending... */
 .navbtn{
-    color: var(--color-text-primary);
+    color: var(--color-text-dominant);
     text-decoration: none;
     text-wrap: nowrap;
 }
 
 .navbtn:hover{
-    color: var(--color-secondary);
+    color: var(--color-complement);
 }
 
 .nav_language{
@@ -202,7 +202,7 @@
 /* ------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START------ FOOTER START*/
 
 footer{
-    background-color: var(--color-secondary) ;
+    background-color: var(--color-complement) ;
     width: 100vw;
     min-height: 450px;
     display: flex;
@@ -251,7 +251,7 @@ footer{
 
 .foot_nav{
     font-size: var(--fs-xs);
-    color: var(--color-text-primary);
+    color: var(--color-text-dominant);
     text-decoration: none;
     
 }
@@ -372,7 +372,7 @@ footer{
 
 .res_filter{
     display: flex;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-dominant);
     border-left: none;
     border-right: none;
     width: 100vw;
@@ -396,7 +396,7 @@ footer{
 .filter_btn {
     padding: 1em;
     text-decoration: none;
-    color: var(--color-text-primary);
+    color: var(--color-text-dominant);
     
 }
 

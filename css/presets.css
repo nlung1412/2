@@ -34,7 +34,7 @@ body{
 /* default btn style */
 .btn{
     text-decoration: none;
-    border: 2px solid var(--btn-txt-primary);
+    border: 2px solid var(--btn-txt-dominant);
 
 } 
 
@@ -48,8 +48,8 @@ body{
 
 /* white background btns */
 .btn--white{
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-txt-primary);
+    background-color: var(--btn-dominant-bg);
+    color: var(--btn-txt-dominant);
 
 } 
 .btn--white:hover{
@@ -64,13 +64,13 @@ body{
 } 
 
 .btn--blue:hover{
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-txt-primary);
+    background-color: var(--btn-dominant-bg);
+    color: var(--btn-txt-dominant);
 } 
 
 .btn--lightblue{
-    background-color: var(--color-secondary);
-    color: var(--color-text-tertiary);
+    background-color: var(--color-complement);
+    color: var(--color-text-accent);
 }
 
 /*--- btn sizes ---*/

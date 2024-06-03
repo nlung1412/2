@@ -27,7 +27,7 @@
 
 
 .confirm_container > .confirm_details:nth-child(2){
-    background-color: var(--color-tertiary);
+    background-color: var(--color-accent);
     gap: 2.5rem;
     margin-top: 50px;
 }
@@ -78,7 +78,7 @@ dd{
     display: flex;
     flex-direction: column;
     border: 2px solid;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-accent);
 }
     
 
@@ -88,11 +88,11 @@ dd{
 }
 
 .order_line{
-    border-left: 0.25px solid var(--color-primary);
+    border-left: 0.25px solid var(--color-dominant);
 }
 
 .sum_head{
-    color: var(--color-primary);
+    color: var(--color-dominant);
     margin-bottom: 0.25em;
 }
 
@@ -117,7 +117,7 @@ dd{
 
 .order_sum_info > *+*{
     padding-top: 1em;
-    color: var(--color-primary);
+    color: var(--color-dominant);
 }
 
 .sum_price{
